@@ -12,6 +12,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+/* 
+ * This class opens baseURL in Chrome browser and selects different drop down options under 'Select Class Example'
+ * using Selenium. 
+ */
+
 public class DropdownSelect {
 
 	WebDriver driver;
