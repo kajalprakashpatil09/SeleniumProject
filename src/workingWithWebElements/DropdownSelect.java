@@ -39,21 +39,21 @@ public class DropdownSelect {
 	@Test
 	public void dropdownOptions() throws InterruptedException {
 
-		WebElement element = driver.findElement(By.id("carselect"));
+		WebElement dropdownElement = driver.findElement(By.id("carselect"));
 
-		Select sel = new Select(element);
-		System.out.println("Select BMW");
-		sel.selectByValue("bmw");
-
-		Thread.sleep(2000);
-		System.out.println("Select Honda");
-		sel.selectByIndex(2);
+		Select dropdownValues = new Select(dropdownElement);
+		System.out.println("Select BMW by value");
+		dropdownValues.selectByValue("bmw");
 
 		Thread.sleep(2000);
-		System.out.println("Select Benz");
-		sel.selectByVisibleText("Benz");
+		System.out.println("Select Honda by index");
+		dropdownValues.selectByIndex(2);
 
-		List<WebElement> options = sel.getOptions();
+		Thread.sleep(2000);
+		System.out.println("Select Benz by visible text");
+		dropdownValues.selectByVisibleText("Benz");
+
+		List<WebElement> options = dropdownValues.getOptions();
 
 		int size = options.size();
 
