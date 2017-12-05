@@ -40,7 +40,7 @@ public class MouseHoverAction {
 		Thread.sleep(2000);
 
 		WebElement mousehoverBtn = driver.findElement(By.id("mousehover"));
-		js.executeScript("arguments[0].scrollIntoView(true);", mousehoverBtn);
+		js.executeScript("window.scrollBy(0,850);");
 		Thread.sleep(3000);
 		
 		Actions action = new Actions(driver);
