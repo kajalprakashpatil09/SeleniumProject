@@ -20,7 +20,7 @@ public class FindByNameAndID {
 
 		driver.get(baseURL);
 
-		driver.findElement(By.id("gs_htif0")).sendKeys("Element identification by ID and Name");
+		driver.findElement(By.id("gs_htif0")).sendKeys("Element identification by ID");
 		System.out.println("Search textbox identified by ID");
 		Thread.sleep(3000);
 
