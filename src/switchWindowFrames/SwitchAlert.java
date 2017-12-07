@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 /* 
-* This class opens a URL in Chrome browser and identifies web element by linkText.
+* This class opens a URL in Chrome browser and explains how to switch focus to Alert popup.
 */
 public class SwitchAlert {
 	WebDriver driver;
