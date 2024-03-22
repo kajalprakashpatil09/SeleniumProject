@@ -1,2 +1,2 @@
 # SeleniumPractice
-This project contains basic codes I did while learning Selenium Webdriver
+This repository contains automation scripts to perform web application testing using Selenium WebDriver.
